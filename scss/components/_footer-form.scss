@@ -1,18 +1,43 @@
 .modal-box {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: baseline;
-  margin-left: 93px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    
+
+  }
+
 }
 
 .submit-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    align-items: normal;
+  }
+
 }
 
 .soc-spam {
+  display: block;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -20,22 +45,28 @@
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--primari-bacground-color);
+
+  @media screen and (min-width: 1200px) {
+    margin-left: -350px;
+  }
 }
 
 .imput-email {
-  width: 358px;
+  min-width: 280px;
   height: 50px;
   padding: 15px 16px;
-  margin-right: 12px;
+  margin-bottom: 20px;
 
   background-color: var(--background-secondery-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+
   &:focus {
     border: 1px solid var(--accent-color-text);
     filter: drop-shadow(0px 4px 4px var(--accent-color-text));
   }
+
   &::placeholder {
     font-weight: 400;
     font-size: 16px;
@@ -44,8 +75,18 @@
 
     color: rgba(255, 255, 255, 0.6);
   }
+
   &:not(placeholder) {
     color: var(--primari-bacground-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    min-width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 358px;
+    margin-bottom: 0px;
   }
 }
 
@@ -65,11 +106,15 @@
   border-radius: 4px;
 
   color: var(--primari-bacground-color);
-  transition: bacground-color var(--transition-duration)
-    var(--transition-timing-function);
+  transition: bacground-color var(--transition-duration) var(--transition-timing-function);
+
   &:hover,
   &:focus {
     background-color: var(--bacground-hover-button);
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
   }
 }
 

@@ -1,17 +1,5 @@
-.staff {
-  margin-bottom: 30px;
-
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 1.18;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--secondary-text-color);
-
-  &-list {
-    background: var(--bacground-staff-color);
-  }
+.staff-list{
+background: var(--bacground-staff-color);
 }
 
 .staff-items {

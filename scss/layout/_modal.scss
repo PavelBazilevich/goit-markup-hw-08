@@ -2,18 +2,32 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  min-width: 290px;
+  min-height: 450px;
+  padding: 40px;
+  overflow-y: auto;
+
   transition: var(--transition-duration) var(--transition-timing-function);
   transform: translate(-50%, -50%) rotatey(0deg);
-  width: 528px;
-  min-height: 581px;
-  padding: 40px;
   background-color: var(--primari-bacground-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
   .backdrop.is-hidden & {
     transform: rotatey(-240deg);
   }
+
+  @media screen and (min-width: 480px) {
+    min-width: 450px;
+    min-height: 609px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+    min-height: 581px;
+  }
+
 }
 
 .modal-close-btn {
@@ -47,14 +61,18 @@
 
 .modal-title {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
 
   color: var(--secondary-text-color);
   margin-bottom: 12px;
+  @media screen and (min-width: 480px)  { 
+    font-size: 20px;
+  }
 }
+
 
 .modal-label {
   display: flex;
@@ -76,8 +94,8 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
-  transition: border-clor var(--transition-duration)
-    var(--transition-timing-function);
+  transition: border-clor var(--transition-duration) var(--transition-timing-function);
+
   &:hover,
   &:focus {
     border-color: var(--accent-color-text);
@@ -86,10 +104,12 @@
 
 .modal-comment {
   margin-top: 4px;
+
   &:hover,
   &:focus {
     border-color: var(--accent-color-text);
   }
+
   & {
     resize: none;
     width: 100%;
@@ -122,8 +142,8 @@
   border: none;
 
   color: var(--primari-bacground-color);
-  transition: background-color var(--transition-duration)
-    var(--transition-timing-function);
+  transition: background-color var(--transition-duration) var(--transition-timing-function);
+
   &:hover,
   &:focus {
     background-color: var(--bacground-hover-button);
@@ -146,11 +166,10 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.1;
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
@@ -158,7 +177,8 @@
 
 .input-polici {
   margin-right: 9px;
-  &:checked + .modal-polici span {
+
+  &:checked+.modal-polici span {
     background-color: var(--accent-color-text);
     border: none;
   }
@@ -175,14 +195,16 @@
 /* --MODAL-ICON-- */
 .modal-input-box {
   position: relative;
+
   &:hover,
-  &:focus + .icon-input {
+  &:focus+.icon-input {
     fill: var(--accent-color-text);
   }
 }
 
 .modal-field {
   margin-top: 10px;
+
   &:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -202,6 +224,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+
   & span {
     width: 16px;
     height: 15px;
