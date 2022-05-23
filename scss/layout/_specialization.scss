@@ -1,0 +1,54 @@
+.specialization-page{
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+       display: block; 
+    }
+}
+
+.specialization {
+    margin-bottom: 50px;
+    &-page {
+    padding-bottom: 94px;
+}
+}
+
+.pictures {
+    display: flex;
+
+    &-items:not(:last-child) {
+    margin-right: 30px;
+}
+}
+
+.thumb {
+    position: relative;
+}
+
+.pictures-label {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 27px 0 27px 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primari-bacground-color);
+    background: rgba(47, 48, 58, 0.8);
+}
+
+
+.specialization,
+.clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}

@@ -1,0 +1,167 @@
+.site-nav,
+.contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+}
+
+/* Логотип */
+
+.site-nav__first-name,
+.site-nav__second-name,
+.second-white-name {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  width: 145px;
+}
+
+.site-nav__first-name {
+  color: #2196f3;
+  margin-right: -4px;
+}
+
+.site-nav__second-name {
+  color: var(--secondary-text-color);
+}
+
+.second-white-name {
+  color: var(--primari-bacground-color);
+}
+
+/* ссылки на страницы */
+.site-nav__link {
+  color: var(--secondary-text-color);
+  transition: color var(--transition-duration) var(--transition-timing-function);
+}
+
+.site-nav,
+.link:hover,
+.site-nav,
+.link:focus {
+  color: var(--accent-color-text);
+}
+
+.site-nav .site-nav__link.current {
+  color: var(--accent-color-text);
+}
+
+.site-nav__link--current {
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    margin-top: 28px;
+    border-radius: 2px;
+    background: var(--accent-color-text);
+  }
+}
+
+.site-nav__link {
+  position: relative;
+  &:hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    margin-top: 28px;
+    border-radius: 2px;
+    background: var(--accent-color-text);
+  }
+}
+
+/* ссылки на контакты */
+.contacts__link,
+.contacts-link-fut,
+.map-link {
+  line-height: 1.7;
+  list-style: none;
+}
+
+.contacts__link {
+  color: var(--primary-text-color);
+  transition: color var(--transition-duration) var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color-text);
+  }
+}
+
+
+
+.nav--center {
+  display: flex;
+  align-items: center;
+}
+
+.header-page {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.site-nav__text {
+  display: flex;
+  padding-left: 0;
+  margin-left: 93px;
+  .site-nav__item + .site-nav__item {
+    margin-left: 50px;
+  }
+}
+
+.site-nav__item .site-nav__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* Контакты */
+.contacts {
+  display: flex;
+  padding-left: 0px;
+}
+
+.contacts__item + .contacts__item {
+  margin-left: 50px;
+}
+
+/* --ICON-HEADER-- */
+.contacts__icon-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+  .contacts__link:hover &,
+  .contacts__link:focus & {
+    fill: var(--accent-color-text);
+  }
+}
+
+.contacts__icon-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+  .contacts__link:hover &,
+  .contacts__link:focus & {
+    fill: var(--accent-color-text);
+  }
+}

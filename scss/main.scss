@@ -1,0 +1,23 @@
+@import "./utils/variables.scss";
+@import "./utils/hidden";
+
+@import "./base/reset";
+
+@import "./components/section.scss";
+@import "./components/conteiner.scss";
+@import "./components/footer-form";     
+@import "./components/footer-icon";
+
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/features";
+@import "./layout/features__icon";
+@import "./layout/specialization";
+@import "./layout/staff";
+@import "./layout/clients";
+@import "./layout/footer"; 
+
+@import "./layout/portfolio-page";
+@import "./layout/backdrop";
+@import "./layout/modal";
