@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WebStudio</title>
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
@@ -169,7 +171,7 @@
           </li>
         </ul>
       </div>
-    </section>  
+    </section>
     <!--Чем мы занимаемся-->
     <section class="specialization-page">
       <div class="conteiner specialization-list">
@@ -179,32 +181,45 @@
             <li class="pictures-items">
               <div class="thumb">
                 <p class="pictures-label">Десктопные приложения</p>
-                <img src="images/img1.jpg" alt="Разработка приложений" width="370" />
+                <img srcset="./images/specialization/img1.jpg 1x, ./images/specialization/img1-2x.jpg 2x"
+                  src="./images/specialization/img1.jpg" alt="Разработка приложений" width="370" />
               </div>
             </li>
             <li class="pictures-items">
               <div class="thumb">
                 <p class="pictures-label">Мобильные приложения</p>
-                <img src="images/img2.jpg" alt="Разработка приложений" width="370" />
+                <img srcset="./images/specialization/img2.jpg 1x, ./images/specialization/img2-2x.jpg 2x"
+                  src="./images/specialization/img2.jpg" alt="Разработка приложений" width="370" />
               </div>
             </li>
             <li class="pictures-items">
               <div class="thumb">
                 <p class="pictures-label">Дизайнерские решения</p>
-                <img src="images/img3.jpg" alt="Разработка приложений" width="370" />
+                <img srcset="./images/specialization/img3.jpg 1x, ./images/specialization/img3-2x.jpg 2x"
+                  src="./images/specialization/img3.jpg" alt="Разработка приложений" width="370" />
               </div>
             </li>
           </ul>
         </div>
       </div>
-    </section> 
+    </section>
     <!--Наша команда-->
-    <section class="staff-list section"> 
+    <section class="staff-list section">
       <div class="conteiner">
         <h2 class="section-title">Наша команда</h2>
         <ul class="staff-items">
           <li class="list-of-staff">
-            <img src="images/team/member1.jpg" alt="участник команды"  />
+            <picture>
+              <source srcset="./images/team/member1.jpg 1x, ./images/team/member1-2x.jpg 2x"
+                media="(min-width: 1200px)">
+              <source srcset="./images/team/member1-tab.jpg 1x, ./images/team/member1-tab-2x.jpg 2x"
+                media="(min-width: 768px)">
+
+              <source srcset="./images/team/member1-mob.jpg 1x, ./images/team/member1-mob-2x.jpg 2x"
+                media="(min-width: 320px)">
+              <img src="images/team/member1.jpg" alt="участник команды" />
+            </picture>
+
             <div class="staff-content">
               <h3 class="staff-name">Игорь Демьяненко</h3>
               <p class="staff-position">Product Designer</p>
@@ -241,7 +256,12 @@
             </ul>
           </li>
           <li class="list-of-staff">
-            <img src="images/team/member4.jpg" alt="участник команды"  />
+            <picture>
+              <source srcset="./images/team/member2.jpg 1x, ./images/team/member2-2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="./images/team/member2-tab.jpg 1x, ./images/team/member2-tab-2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/team/member2-mob.jpg 1x, ./images/team/member2-mob-2x.jpg 2x" media="(min-width: 320px)">
+              <img src="images/team/member2.jpg" alt="участник команды" />
+            </picture>
             <div class="staff-content">
               <h3 class="staff-name">Ольга Репина</h3>
               <p class="staff-position">Frontend Developer</p>
@@ -278,7 +298,12 @@
             </ul>
           </li>
           <li class="list-of-staff">
-            <img src="images/team/member3.jpg" alt="участник команды"  />
+            <picture>
+              <source srcset="./images/team/member3.jpg 1x, ./images/team/member3-2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="./images/team/member3-tab.jpg 1x, ./images/team/member3-tab-2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/team/member3-mob.jpg 1x, ./images/team/member3-mob-2x.jpg 2x" media="(min-width: 320px)">
+              <img src="images/team/member3.jpg" alt="участник команды" />
+            </picture>
             <div class="staff-content">
               <h3 class="staff-name">Николай Тарасов</h3>
               <p class="staff-position">Marketing</p>
@@ -315,7 +340,12 @@
             </ul>
           </li>
           <li class="list-of-staff">
-            <img src="images/team/member2.jpg" alt="участник команды"  />
+            <picture>
+              <source srcset="./images/team/member4.jpg 1x, ./images/team/member4-2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="./images/team/member4-tab.jpg 1x, ./images/team/member4-tab-2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/team/member4-mob.jpg 1x, ./images/team/member4-mob-2x.jpg 2x" media="(min-width: 320px)">
+              <img src="images/team/member4.jpg" alt="участник команды" />
+            </picture>
             <div class="staff-content">
               <h3 class="staff-name">Михаил Ермаков</h3>
               <p class="staff-position">UI Designer</p>
@@ -353,7 +383,7 @@
           </li>
         </ul>
       </div>
-    </section> 
+    </section>
     <!-- Постоянные клиенты -->
     <section class="section ">
       <div class="conteiner">
