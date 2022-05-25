@@ -18,6 +18,10 @@ background: var(--bacground-staff-color);
     margin-bottom: -30px;
     margin-left: -30px;
   }
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0px;
+      
+    }
 }
 
 .list-of-staff {

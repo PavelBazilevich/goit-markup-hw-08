@@ -9,6 +9,10 @@
     margin-left: -30px;
     margin-bottom: -30px;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+  }
 }
 
 
@@ -24,26 +28,29 @@
   @media screen and (min-width: 480px) {
     min-width: calc(100% / 2 - 30px);
     margin-left: 30px;
+
     &:nth-child(n + 5) {
-        margin-bottom: 0px;
-      }
+      margin-bottom: 0px;
+    }
 
   }
 
   @media screen and (min-width: 768px) {
     min-width: calc(100% / 3 - 30px);
     margin-left: 30px;
+
     &:nth-child(n + 4) {
-        margin-bottom: 0px;
-      }
+      margin-bottom: 0px;
+    }
   }
 
   @media screen and (min-width: 1200px) {
     min-width: calc(100% / 6 - 30px);
     margin-left: 30px;
+
     &:not(:last-child) {
-        margin-bottom: 0px;
-      }
+      margin-bottom: 0px;
+    }
   }
 }
 
