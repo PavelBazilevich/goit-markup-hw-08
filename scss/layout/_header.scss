@@ -7,17 +7,26 @@
 }
 
 /* Логотип */
+.header-logo{
+  margin: 16px 0px;
+}
 
 .site-nav__first-name,
 .site-nav__second-name,
 .second-white-name {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.7;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
+  
 
-  width: 145px;
+  width: 134px;
+  @media screen and (max-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+    width: 145px;
+  }
 }
 
 .site-nav__first-name {
@@ -31,6 +40,27 @@
 
 .second-white-name {
   color: var(--primari-bacground-color);
+}
+// кнопка мобильного меню
+
+.mob-menu-open{
+  margin-left: auto;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: var(--primari-bacground-color);
+
+  @media screen and (min-width: 768px) {
+      display: none;
+    }
+}
+
+.icon-menu-burder{
+  &:hover,
+    &:focus {
+      fill: var(--accent-color-text);
+    }
 }
 
 /* ссылки на страницы */
@@ -111,18 +141,31 @@
 }
 
 .site-nav {
-  display: flex;
+  display: none;
   align-items: center;
-  margin-right: auto;
+  
+
+  @media screen and (min-width: 768px) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+        @media screen and (min-width: 768px) {
+          margin-left: 93px;
+          margin-right: auto;
+        }
 }
 
 .site-nav__text {
   display: flex;
   padding-left: 0;
-  margin-left: 93px;
+  
   .site-nav__item + .site-nav__item {
     margin-left: 50px;
   }
+    @media screen and (min-width: 768px) {
+      
+    }
 }
 
 .site-nav__item .site-nav__link {
@@ -133,35 +176,55 @@
 
 /* Контакты */
 .contacts {
-  display: flex;
+  display: none;
   padding-left: 0px;
+
+  @media screen and (min-width: 768px) {
+      display: block;
+    }
 }
 
 .contacts__item + .contacts__item {
   margin-left: 50px;
+
+  @media screen and (min-width: 768px) {
+      margin-left: 0;
+    }
 }
+
 
 /* --ICON-HEADER-- */
 .contacts__icon-envelope {
   width: 16px;
   height: 12px;
-  margin-right: 10px;
+  margin-right: 8px;
   fill: var(--primary-text-color);
   transition: fill var(--transition-duration) var(--transition-timing-function);
   .contacts__link:hover &,
   .contacts__link:focus & {
     fill: var(--accent-color-text);
   }
+    @media screen and (min-width: 768px) {
+      margin-right: 10px;
+    }
 }
 
 .contacts__icon-smartphone {
   width: 10px;
   height: 16px;
-  margin-right: 10px;
+  margin-right: 8px;
   fill: var(--primary-text-color);
   transition: fill var(--transition-duration) var(--transition-timing-function);
   .contacts__link:hover &,
   .contacts__link:focus & {
     fill: var(--accent-color-text);
   }
+
+    @media screen and (min-width: 768px) {
+      margin-right: 10px;
+    }
+}
+
+.no-scroll {
+  overflow: hidden;
 }
